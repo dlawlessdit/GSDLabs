@@ -1,0 +1,62 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-03-14 17:28+0000\n"
+"PO-Revision-Date: 2018-03-08 15:11+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: de\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 2.0.5\n"
+
+#: .\boards\templates\home.html:6 .\boards\templates\home.html:68
+#: .\boards\templates\homebkup.html:6 .\boards\templates\homebkup.html:68
+msgid "Boards"
+msgstr "Boards - German"
+
+#: .\boards\templates\home.html:44 .\boards\templates\homebkup.html:44
+msgid "language"
+msgstr ""
+
+#: .\boards\templates\home.html:73 .\boards\templates\homebkup.html:73
+#, fuzzy
+#| msgid "Boards"
+msgid "Board"
+msgstr "Boards - German"
+
+#: .\boards\templates\home.html:74 .\boards\templates\homebkup.html:74
+msgid "Posts"
+msgstr "Pfosten"
+
+#: .\boards\templates\home.html:75 .\boards\templates\homebkup.html:75
+msgid "Topics"
+msgstr "Themen"
+
+#: .\boards\templates\home.html:76 .\boards\templates\homebkup.html:76
+msgid "Last Post"
+msgstr "Letzter Beitrag"
+
+#: .\boards\views.py:18
+msgid "Hello, Hello"
+msgstr "Hallo, Hallo"
+
+#: .\boardsproj\settings.py:114
+msgid "English"
+msgstr "Englisch"
+
+#: .\boardsproj\settings.py:115
+msgid "German"
+msgstr "Deutsch"
+
+#: .\boardsproj\settings.py:116
+msgid "Portuguese"
+msgstr "Portugiesisch"

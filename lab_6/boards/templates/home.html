@@ -1,0 +1,96 @@
+{% load static %}<!DOCTYPE html>
+{% load i18n %}
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>{%trans "Boards" %}</title>
+
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+  </head>
+  <body>
+    <div id="language-select">
+      <table>
+        <tr>
+          Select Lanaguage:
+        <tr>
+        {% get_language_info_list for LANGUAGES as languages %}
+        {% for language in languages %}
+            <form action="{% url 'set_language' %}" method="post">
+                {% csrf_token %}
+                <input name="language" type="hidden" value="{{ language.code }}" />
+                <input type="submit"
+                       value="{{ language.name|upper }}"
+                       class="btn-link{% if language.code == LANGUAGE_CODE %} current{% endif %}" />
+            </form>
+        {% endfor %}
+      </tr>
+      <tr>
+      	{% get_language_info for LANGUAGE_CODE as lang %}
+      	Current Language is: 
+      	{{lang.name_local}}
+      </tr>
+    </div>
+
+  
+    <div id="language-select2">
+      <table>
+        <tr>
+          Select Language:
+        </tr>
+        <tr>
+            <form action="{% url 'set_language' %}" method="post">
+                {% csrf_token %}
+                <input name="next" type="hidden" value="{{ redirect_to }}" />
+                <select class="selectpicker" name="{% trans 'language' %}" style="width: auto;" onchange="this.form.submit()">
+                  {% get_current_language as LANGUAGE_CODE %}
+                  {% get_available_languages as LANGUAGES %}
+                  {% get_language_info_list for LANGUAGES as languages %}
+                  {% for language in languages %}
+                      <option
+                        value="{{ language.code }}"
+                        {% if language.code == LANGUAGE_CODE %} selected="selected"{% endif %}
+
+                        <span style="display:inline-block; width:100px; padding-left: 10px; text-shadow:none">
+                          {{ language.name_local }}
+                          <!-- span style="color:#999;">[{{ language.code }}]</span -->
+                        </span>>
+                        {{ language.name }}
+                      </option>
+                  {% endfor %}
+                </select>
+            </form>
+          </tr>
+   </div>
+
+
+    <div class="container">
+      <ol class="breadcrumb my-4">
+        <li class="breadcrumb-item active">{%trans "Boards" %}</li>
+      </ol>
+      <table class="table">
+        <thead class="thead-inverse">
+          <tr>
+            <th>{%trans "Board" %}</th>
+            <th>{%trans "Posts" %}</th>
+            <th>{%trans "Topics" %}</th>
+            <th>{%trans "Last Post" %}</th>
+          </tr>
+        </thead>
+        <tbody>
+          {% for board in boards %}
+            <tr>
+              <td>
+                {{ board.name }}
+                <small class="text-muted d-block">{{ board.description }}</small>
+              </td>
+              <td class="align-middle">0</td>
+              <td class="align-middle">0</td>
+              <td></td>
+            </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+
+    </div>
+  </body>
+</html>
