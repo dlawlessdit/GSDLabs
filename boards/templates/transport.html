@@ -1,0 +1,174 @@
+--NOTE--I've tagged some of the content for translation using blocktrans and some with trans just to show you how to do it
+
+{% load static %}<!DOCTYPE html>
+
+{%load i18n%}
+
+<html>
+	<head>
+NOTE: TAGGING WITH TRANS FOR TRANSLATION
+		<title>{% trans "Welcome" %}</title>
+		<link rel="stylesheet" type="text/css" href="../../css/style.css">
+	</head>
+
+
+	<body>
+		<div class="language">
+            <a href="../en/index.html">English</a>
+            <a href="../de/index.html">Deutsch(German)</a>
+            <a href="../zh/index.html">中文(Chinese)</a>
+        </div>
+		<div>
+		<ul class="other_nav">			
+NOTE: TAGGING WITH TRANS	
+            <li class ="title" style="float:left"><a>{% trans "Welcome to Travel Ireland" %}</a></li>
+			<li><a href="index.html">Home</a></li>
+			<li><a href="about.html">About</a></li>
+			<li><a href="transport.html">Transport</a></li>
+            <li><a href="contact.html">Contact</a></li>
+		</ul>
+		</div>
+		<a id="dublin_city"></a>
+		
+		<section id="main">
+			<h2>TRANSPORT</h2>
+			<hr>
+			<br>
+			<br>
+
+			
+			<h3>Dublin Bus</h3>
+			<br>
+			
+			<article>
+				<table>
+--NOTE: THIS IS HOW TO GET THE IMAGES TO CHANGE BASED ON LOCATION
+					<tr>
+						{% get_current_language as LANGUAGE_CODE %}
+
+						<td width="50%"><img src="{{MEDIA_URL}}{{ LANGUAGE_CODE }}/dublin_bus.jpg" width="100%" ></td>
+						
+						<td>
+NOTE: TAGGING WITH BLOCKTRANS 
+							<ul class="t">
+								<li>{% blocktrans %} Step on the bus and give destination. Then give the exact amount in coins or use Leap Card.
+								Press the ‘Stop’ button to stop the bus and get off {% endblocktrans %}</li>
+								<li>Buy a Leap Card online or at Payzone outlet (Spar, Centra, Gala etc.). You can top up online 
+								or at LUAS station. The minimum top up is 5£. It is useful on Dublin Bus, 
+								Dart, LUAS and Bus Eireann.</li>
+								<li>There are also sightseeing tours such as ‘hop-on hop-off’ Day Tours (24 Hour – 72 Hour tickets).
+								Airlink Tickets to aiport. Dublin Bus 16 takes you to City Center from the Airport. There are also Ghostbus Tours at night.</li><br>
+								<li>Airport services, departs from Heuston Rail Station and Camden Charlotte Way. Total cost: 9.00£ </li>
+							</ul>
+						</td>
+					</tr>
+				</table>
+			</article>
+			<br>
+			<br>
+			<hr>
+			<br>
+			<br>
+			
+			<h3>DART</h3>
+			<br>
+			<article>
+				<table>
+					<tr>
+						<td width="50%"><img src="../../img/en/dart.jpg" width="100%" ></td>
+						
+						<td>
+							<ul class="t">
+								<li>Book online or pay with cash at the station</li><br>
+								<li>Use Leap Card at tag-on point or buy ticket with cash at station terminals,
+								then tag-off at similar point. Can only use Leap Card in Dublin region</li><br>
+								<li>May bring bicycle on Dart or park at station</li><br>
+								<li>Car parks available around Dart station, and disabled access such as disabled 
+								parking spaces and areas on Dart for wheelchair</li><br>
+								<li>May not bring strollers, personal luggage other than hand luggage or portable seating.
+								You may bring small dogs and cats on board if on leash or on lap. Guide and assistance
+								dogs only allowed in restaurant cars</li>
+							</ul>
+						</td>
+					</tr>
+				</table>
+			</article>
+			<br>
+			<br>
+			<hr>
+			<br>
+			<br>
+			
+			<h3>LUAS</h3>
+			<br>
+			<article>
+				<table>
+					<tr>
+						<td width="50%"><img src="../../img/en/luas.jpg" width="100%" ></td>
+						
+						<td>
+							<ul class="t">
+								<li>LUAS stands for Light Rail Transit System</li><br>
+								<li>Transport Infrastructure Ireland (TII) responsible for Luas</li><br>
+								<li>There are two Luas tram lines, Red Line and Green Line</li><br>
+								<li>Red Line 20kms in length with 32 Stops, runs from Tallaght to The Point, from Saggart to Connolly</li><br>
+								<li>Green Line 24.5km in length with 35 Stops, runs from Brides Glen to Broombridge</li><br>
+								<li>Designated crossing points at each stop, track level with pathway. Pedestrian crossings
+								in city, cross roads and LUAS lines, use Safe Cross Code when crossing</li><br>
+								<li>Tram from Heuston to Abbey Street takes about 12 minutes,
+								tram from Marlborough to Balally takes about 27 minutes. The pricing would be 5£ per trip.</li>
+							</ul>
+						</td>
+					</tr>
+				</table>
+			</article>
+			<br>
+			<br>
+			<hr>
+			<br>
+			<br>
+			
+			<h3>Bus Eierann</h3>
+			<br>
+			<article>
+				<table>
+					<tr>
+						<td width="50%"><img src="../../img/en/eireann.jpg" width="100%" ></td>
+						
+						<td>
+							<ul class="t">
+								<li>Travels from Dublin to counties like Wexford, Wicklow, and Kildare</li><br>
+								<li>Does hop-on hop-off “Open-Road” ticket for freedom</li><br>
+								<li>Wild Atlantic Way, Donegal start, Cork end, goes travels along West Coast of Ireland</li><br>
+								<li>Ireland’s Ancient East, Dublin start and end via Newgrange Passage Tomb and Blarney Stone in Cork. The pricing would be 8£ per trip.</li>
+							</ul>
+						</td>
+					</tr>
+				</table>
+			</article>
+			<script type ="text/javascript">
+					function calc()
+					{
+						var n1 = Number(document.formcalc.people.value);
+						var n2 = Number(document.formcalc.days.value);
+						var result = n1 * n2 * 12;
+						document.formcalc.total.value = result + "£";
+					
+						
+						
+						
+					}
+			</script>
+		<form name="formcalc">	
+				<p style="text-align: center;">How much money do you want??</p>
+				<p style="text-align: left;">Enter number of people:</p>
+				<input type="text" name="people"/>
+				<p style="text-align: left;">Enter number of Days:</p>
+				<input type="text" name="days"/>
+				<input type= button value="Find out!" onclick = "calc()">
+				<p style="text-align: center;">You'll need a minimum of:</p>
+				<input type="text" name="total"/>
+		</form>
+		</section>
+	</body>
+</html>

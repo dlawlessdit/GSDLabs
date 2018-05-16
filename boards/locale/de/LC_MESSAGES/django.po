@@ -1,0 +1,165 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-05-16 16:06+0100\n"
+"PO-Revision-Date: 2018-05-16 16:06+0100\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: de\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 2.0.5\n"
+
+# Irisches Reisebüro
+#: .\boards\templates\about.html:4 .\boards\templates\index.html:35
+msgid "Ireland Travel Agency"
+msgstr "Reisebüro"
+
+#: .\boards\templates\about.html:25
+msgid " Welcome to Travel Ireland"
+msgstr "REISE IRLAND"
+
+#: .\boards\templates\about.html:27
+msgid "Home"
+msgstr "Anasayfa"
+
+#: .\boards\templates\about.html:28
+msgid "About"
+msgstr "Circa"
+
+#: .\boards\templates\about.html:29
+msgid "Transport"
+msgstr "Öffentlicher Nahverkehr"
+
+#: .\boards\templates\about.html:36
+msgid "About Dublin"
+msgstr "Über Dublin"
+
+#: .\boards\templates\about.html:37
+msgid "About Galway"
+msgstr "Über Galway"
+
+#: .\boards\templates\about.html:38
+msgid "About Cork"
+msgstr "Über Cork"
+
+#: .\boards\templates\about.html:59
+msgid ""
+"Dublin Castle stands right in the heart of historic Dublin. For more than "
+"1,000 \n"
+"\t\t\t\t\tyears it has been the symbolic stronghold for those who ruled "
+"Ireland, from the Vikings \n"
+"\t\t\t\t\tto the English. A sprawling complex of historic buildings as old "
+"as 934, it offers a unique\n"
+"\t\t\t\t\tcrash course in Irish history."
+msgstr ""
+"Das Dubliner Schloss liegt direkt im Herzen des historischen Dublin. Seit "
+"mehr als 1.000 Jahren ist es die symbolische Hochburg für diejenigen, die "
+"Irland regiert, von den Wikingern auf die Engländer. Ein weitläufigen "
+"Komplex von historischen Gebäuden so alt wie 934, bietet es einen "
+"einzigartigen Crash-Kurs in der irischen Geschichte."
+
+#: .\boards\templates\about.html:74
+msgid ""
+"Located in St James's Gate, Ushers, Dublin 8, \n"
+"\t\t\t\t\tthis hi-tech visitor centre takes you through the 250 year history "
+"of The Dark Stuff. \n"
+"\t\t\t\t\tSee, hear and smell how Guinness is made and take a complimentary "
+"pint \n"
+"\t\t\t\t\tin the Gravity Bar, the highest bar in Ireland."
+msgstr ""
+"Das Hotel liegt in St James es Gate, Ushers, Dublin 8, diese Hallo-Tech-"
+"Besucherzentrum führt Sie durch die 250 Jahr Geschichte des Dark stuff. \n"
+"\t\t\t\t\tSehen, hören und riechen, wie Guinness gemacht wird und nehmen Sie "
+"ein kostenloses Pint in der Gravity Bar, die höchste Bar in Irland."
+
+#: .\boards\templates\about.html:90
+msgid ""
+"The National Museum has branches all over Dublin. Visit its Kildare Street "
+"buildings \n"
+"\t\t\t\t\tand prepare to get stunned by the sheer number and amazing beauty "
+"of its prehistoric gold ornaments which \n"
+"\t\t\t\t\tinclude the Ardagh Chalice and the famous Tara Brooch with their "
+"Celtic designs."
+msgstr ""
+"Das National Museum hat Niederlassungen in ganz Dublin. Besuchen Sie die "
+"Kildare Street Gebäude und bereiten Sie sich durch die schiere Zahl und "
+"erstaunliche Schönheit seiner prähistorischen Goldornamente, die die Ardagh "
+"Kelch und die berühmte Tara Brosche mit ihren keltischen Designs gehören "
+"betäubt zu bekommen."
+
+#: .\boards\templates\index.html:15
+msgid "language"
+msgstr "Sprache"
+
+#: .\boards\templates\index.html:43
+msgid "TRAVEL IRELAND"
+msgstr "REISE IRLAND"
+
+#: .\boards\templates\transport.html:7
+msgid "Welcome "
+msgstr "Willkommen"
+
+#: .\boards\templates\transport.html:20
+msgid "Welcome to Travel Ireland"
+msgstr "REISE IRLAND"
+
+#: .\boards\templates\transport.html:46
+msgid ""
+" Step on the bus and give destination. Then give the exact amount in coins "
+"or use Leap Card.\n"
+"\t\t\t\t\t\t\t\tPress the ‘Stop’ button to stop the bus and get off "
+msgstr ""
+"Steigen Sie in den Bus und geben Sie das Ziel an. Geben Sie dann die genaue. "
+"Menge in Münzen ein oder verwenden Sie Leap Card."
+
+#: .\boards\views.py:31
+msgid "Boards"
+msgstr "Pinnwände"
+
+#: .\boardsproj\settings.py:117
+msgid "English"
+msgstr "Englisch"
+
+#: .\boardsproj\settings.py:118
+msgid "German"
+msgstr "Deutsch"
+
+# Irisches Reisebüro
+#, fuzzy
+#~| msgid "Ireland Travel Agency"
+#~ msgid " Welcome to Ireland Travel Agency"
+#~ msgstr "Reisebüro"
+
+# Irisches Reisebüro
+#, fuzzy
+#~| msgid "Ireland Travel Agency"
+#~ msgid " \"Ireland Travel Agency\" "
+#~ msgstr "Reisebüro"
+
+# Sprache auswählen
+#~ msgid "Select Language:"
+#~ msgstr "Sprache wählen:"
+
+#~ msgid "Board"
+#~ msgstr "Board"
+
+#~ msgid "Posts"
+#~ msgstr "Artikel"
+
+#~ msgid "Topics"
+#~ msgstr "Themen"
+
+#~ msgid "Last Post"
+#~ msgstr "Son Gönderi"
+
+#~ msgid "Chinese"
+#~ msgstr "Chinesisch"

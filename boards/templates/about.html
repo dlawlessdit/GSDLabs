@@ -1,0 +1,278 @@
+{% get_current_language as LANGUAGE_CODE %}
+<html>
+	<head>
+		<title>{%blocktrans%}Ireland Travel Agency{%endblocktrans%}</title>
+		<link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}>
+	</head>
+
+
+	<body>
+		<tbody>
+          {% for board in boards %}
+            <tr>
+              <td>
+                <a href="{% url 'board_topics' board.pk %}">{{ board.name }}</a>
+                <small class="text-muted d-block">{{ board.description }}</small>
+              </td>
+              <td class="align-middle">0</td>
+              <td class="align-middle">0</td>
+              <td></td>
+            </tr>
+          {% endfor %}
+		</tbody>
+
+		<div>
+		<h2 class="title">{%blocktrans%} Welcome to Travel Ireland{%endblocktrans%}</h2>
+		<ul class="nav">				
+			<li><a href="{% url 'index' %}">{%trans "Home" %}</a></li>
+			<li><a href="{% url 'about' %}">{%trans "About" %}</a></li>
+			<li><a href="{% url 'transport' %}">{%trans "Transport"%}</a></li>
+		</ul>
+		</div>
+		<a id="dublin_city"></a>
+		
+		<div>
+		<ul class="mini_nav">
+			<li><a href="#dublin_city">{%trans "About Dublin" %}</a></li>
+			<li><a href="#galway_city">{%trans "About Galway" %}</a></li>
+			<li><a href="#cork_city">{%trans "About Cork" %}</a></li>
+		</ul>
+		</div>
+		
+		<section id="main">
+		<hr>
+		<br>
+		<br>
+
+		
+		<h3>DUBLIN</h3>
+		<br>
+		<br>
+		
+		<article>
+			<table>
+  				<tr>
+    				<th>Dublin Castle</th>
+			  	</tr>
+			  	<tr>
+				    <td width="30%"><img src="{{MEDIA_URL}}{{ LANGUAGE_CODE }}/dublin_castle.jpg" width="100%" /></td>
+				    <td>{%blocktrans%}Dublin Castle stands right in the heart of historic Dublin. For more than 1,000 
+					years it has been the symbolic stronghold for those who ruled Ireland, from the Vikings 
+					to the English. A sprawling complex of historic buildings as old as 934, it offers a unique
+					crash course in Irish history.{%endblocktrans%}</td>
+			  	</tr>
+			</table>
+		</article>
+		<br>
+		<article>
+			<table>
+  				<tr>
+					<th></th>
+    				<th>Guinness Storehouse</th>
+			  	</tr>
+			  	<tr>
+				    <td>{%blocktrans%}Located in St James's Gate, Ushers, Dublin 8, 
+					this hi-tech visitor centre takes you through the 250 year history of The Dark Stuff. 
+					See, hear and smell how Guinness is made and take a complimentary pint 
+					in the Gravity Bar, the highest bar in Ireland.{%endblocktrans%}</td>
+					<td width="30%"><img src="img/guinness.jpg" width="100%" ></td>
+			  	</tr>
+			</table>
+		</article>
+		<br>
+		<article>
+			<table>
+  				<tr>
+    				<th>National Museum Of Ireland</th>
+			  	</tr>
+			  	<tr>
+				    <td width="30%" ><img src="img/national.jpg" width="100%" ></td>
+				    <td>{%blocktrans%}The National Museum has branches all over Dublin. Visit its Kildare Street buildings 
+					and prepare to get stunned by the sheer number and amazing beauty of its prehistoric gold ornaments which 
+					include the Ardagh Chalice and the famous Tara Brooch with their Celtic designs.{%endblocktrans%}</td>
+			  	</tr>
+			</table>
+		</article>
+		<br>
+		<article>
+			<table>
+  				<tr>
+					<th></th>
+    				<th>Trinity College</th>
+			  	</tr>
+			  	<tr>
+				    <td>Founded by Queen Elizabeth I, Trinity educated the elite of Anglo-Irish society for centuries.
+					You can practically feel the wealth of its patrons standing in the Old Library or taking a stroll 
+					through the grounds. Trinity is literally a town within the town, complete with its own Cricket pitch.
+					The renown Celtic art masterpiece, the illustrated Book of Kells is on display at Trinity.</td>
+					<td width="30%"><img src="img/trinity.jpg" width="100%" ></td>
+			  	</tr><a id="galway_city"></a>
+			</table>
+		</article>
+		
+		<hr>
+		<br>
+		<br>
+
+		<h3>Galway</h3>
+		<br>
+		<br>
+		
+		<article>
+			<table>
+  				<tr>
+    				<th>Galway City Museum</th>
+			  	</tr>
+			  	<tr>
+				    <td width="30%"><img src="img/galway_museum.jpg" width="100%" ></td>
+				    <td>Exhibits at this modern museum covering the city's history
+					from 1800 to 1950 include an iconic Galway hooker fishing boat,
+					a collection of currachs (boats made of a framework of laths 
+					covered with tarred canvas) and sections covering Galway and 
+					the Great War and the city's cinematic connections.</td>
+			  	</tr>
+			</table>
+		</article>
+		<br>
+		<article>
+			<table>
+  				<tr>
+					<th></th>
+    				<th>Spanish Arch</th>
+			  	</tr>
+			  	<tr>
+				    <td>The Spanish Arch is thought to be an extension of Galway's medieval city walls,
+					designed to protect ships moored at the nearby quay while
+					they unloaded goods from Spain, although it was partially 
+					destroyed by the tsunami that followed the 1755 Lisbon earthquake. 
+					Today it reverberates with buskers and drummers, and the lawns and
+					riverside form a gathering place for locals and visitors on sunny days, as kayakers
+					negotiate the tidal rapids of the River Corrib.</td>
+					<td width="30%"><img src="img/arch.jpg" width="100%" ></td>
+			  	</tr>
+			</table>
+		</article>
+		<br>
+		<article>
+			<table>
+  				<tr>
+    				<th>Galway Cathedral</th>
+			  	</tr>
+			  	<tr>
+				    <td width="30%" ><img src="img/galway_cath.jpg" width="100%" ></td>
+				    <td>Rising over the River Corrib, imposing Galway Cathedral was dedicated by the late 
+					Cardinal Richard Cushing of Boston in 1965. The interior is fantastic, with a 
+					beautifully decorated dome, attractive Romanesque arches, lovely mosaics and rough-hewn
+					stonework emblazoned with copious stained glass. The superb acoustics are best 
+					appreciated during an organ recital; concert dates and ticket information are posted 
+					on the website. From the Spanish Arch, a riverside path runs upriver and across the 
+					Salmon Weir Bridge to the cathedral.</td>
+			  	</tr>
+			</table>
+		</article>
+		<br>
+		<article>
+			<table>
+  				<tr>
+					<th></th>
+    				<th>Galway Market</th>
+			  	</tr>
+			  	<tr>
+				    <td>Galway's bohemian spirit comes alive at its street market, which has set up in this 
+					spot for centuries. Saturdays are the standout for food, when farmers sell fresh produce
+					alongside stalls selling arts and crafts, and cooking up ready-to-eat dishes.
+					Additional markets take place from noon to 6pm on bank holidays, Fridays in 
+					July and August and every day during the Galway International Arts Festival. 
+					Buskers add to the festive atmosphere.</td>
+					<td width="30%"><img src="img/galway_market.jpg" width="100%" ></td>
+				</tr><a id="cork_city"></a>
+			</table>
+		</article>
+		
+		<hr>
+		<br>
+		<br>
+
+		<h3>Cork</h3>
+		<br>
+		<br>
+		
+		<article>
+			<table>
+  				<tr>
+    				<th>Fitzgerald Park and Cork Public Museum</th>
+			  	</tr>
+			  	<tr>
+				    <td width="30%"><img src="img/fitz.jpg" width="100%" ></td>
+				    <td>Named after Edward Fitzgerald, the city's Lord Mayor who organized Cork's 
+					International Exhibition in 1902, Fitzgerald Park is a tranquil oasis on the 
+					outskirts of Cork city. It still features the original pavilion and ornamental 
+					fountain from the era. In the gardens here, visitors will find Cork Public Museum,
+					a cafe, sculptures, a skate park, and a water-lily pond. Picturesque Daly's Bridge, 
+					built in 1926 and known locally as the "Shaky Bridge," connects to Sundays Well Road.</td>
+			  	</tr>
+			</table>
+		</article>
+		<br>
+		<article>
+			<table>
+  				<tr>
+					<th></th>
+    				<th>Shandon Bells, St. Anne's Church</th>
+			  	</tr>
+			  	<tr>
+				    <td>Across the River Lee on the north side of the city, St. Anne's Church (1722) 
+					is known for the famous Shandon Bells tower. The church still uses its original 
+					18th-century bells, which have become one of the city's must-see sights. 
+					St. Anne's Tower is a distinctive landmark on the city skyline, with its facing of 
+					red sandstone (north & east) and white ashlar limestone (south & west). Visitors get 
+					the chance to ring the bells from the first floor, view the internal workings of the 
+					clocks, see the bells firsthand, and enjoy spectacular 360-degree views of Cork City and 
+					beyond from the balcony. In nearby O'Connell Square, the Cork Butter Museum follows the 
+					long history of Irish butter making.</td>
+					<td width="30%"><img src="img/bells.jpg" width="100%" ></td>
+			  	</tr>
+			</table>
+		</article>
+		<br>
+		<article>
+			<table>
+  				<tr>
+    				<th>Crawford Art Gallery</th>
+			  	</tr>
+			  	<tr>
+				    <td width="30%"><img src="img/gallery.jpg" width="100%" ></td>
+				    <td>The permanent collections of the Crawford Art Gallery contain paintings, 
+					sculpture, and prints as well as crafts, stained glass, and ceramics. 
+					The sculpture galleries include Greco-Roman casts by Antonio Canova and 
+					Irish and European sculpture dating from the 19th century through modern works.
+					The museum's collection of paintings is extensive, with works ranging from 
+					the 16th century through the present, with a special exhibit dedicated to 
+					female artists. The gallery also frequently offers drop-in creative events, 
+					including presentations and hands-on experiences.</td>
+			  	</tr>
+			</table>
+		</article>
+		<br>
+		<article>
+			<table>
+  				<tr>
+					<th></th>
+    				<th>Fota Wildlife Park</th>
+			  	</tr>
+			  	<tr>
+				    <td>A few kilometers' drive east of Cork City, the 70-acre wildlife park is 
+					home to animals that are - as much as possible - free to roam in their natural environment, 
+					where visitors can observe and interact with them. You may be joined at your picnic table by 
+					ring-tailed lemurs (although of course they should not be fed), and giraffes wander freely in 
+					the central enclosure. Unlike many safari parks, Fota is not a drive-through experience. 
+					On that, a word of warning, it's a lengthy walk around the park, and to get the most from it, 
+					at least half a day should be put aside for a visit.</td>
+					<td width="30%"><img src="img/cork_zoo.jpg" width="100%" ></td>
+			  	</tr>
+			</table>
+		</article>
+	</section>
+
+	</body>
+</html>

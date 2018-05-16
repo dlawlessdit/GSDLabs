@@ -1,0 +1,112 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-05-16 15:45+0100\n"
+"PO-Revision-Date: 2018-05-16 15:41+0100\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: zh\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.0.5\n"
+
+#: .\boards\templates\about.html:4 .\boards\templates\index.html:35
+#: .\boards\templates\transport.html:6
+msgid "Ireland Travel Agency"
+msgstr "爱尔兰旅行社"
+
+#: .\boards\templates\about.html:25
+msgid " Welcome to Travel Ireland"
+msgstr "欢迎来到爱尔兰旅游"
+
+#: .\boards\templates\about.html:27
+msgid "Home"
+msgstr "媒体库"
+
+#: .\boards\templates\about.html:28
+msgid "About"
+msgstr "关于软木"
+
+#: .\boards\templates\about.html:29
+msgid "Transport"
+msgstr "運輸"
+
+#: .\boards\templates\about.html:36
+msgid "About Dublin"
+msgstr "关于"
+
+#: .\boards\templates\about.html:37
+msgid "About Galway"
+msgstr "关于"
+
+#: .\boards\templates\about.html:38
+msgid "About Cork"
+msgstr "关于软木"
+
+#: .\boards\templates\about.html:59
+msgid ""
+"Dublin Castle stands right in the heart of historic Dublin. For more than "
+"1,000 \n"
+"\t\t\t\t\tyears it has been the symbolic stronghold for those who ruled "
+"Ireland, from the Vikings \n"
+"\t\t\t\t\tto the English. A sprawling complex of historic buildings as old "
+"as 934, it offers a unique\n"
+"\t\t\t\t\tcrash course in Irish history."
+msgstr ""
+"都伯林城堡在历史上都柏林的心脏站立权利。1000年来, 它一直是那些统治爱尔兰, 从"
+"维京人到英国人的象征据点。它是历史建筑的一个庞大的建筑群, 古老的 934, 它提供"
+"了一个独特的速成课程在爱尔兰历史上。"
+
+#: .\boards\templates\about.html:74
+msgid ""
+"Located in St James's Gate, Ushers, Dublin 8, \n"
+"\t\t\t\t\tthis hi-tech visitor centre takes you through the 250 year history "
+"of The Dark Stuff. \n"
+"\t\t\t\t\tSee, hear and smell how Guinness is made and take a complimentary "
+"pint \n"
+"\t\t\t\t\tin the Gravity Bar, the highest bar in Ireland."
+msgstr ""
+"坐落在圣詹姆斯的大门, 引进, 都柏林 8, 这个高科技访客中心带你经历了250年的黑暗"
+"的东西的历史。\n"
+"\t\t\t\t\t看到, 听到和闻到吉尼斯是如何制作, 并采取免费的一品脱在重力酒吧, 在"
+"爱尔兰最高的酒吧。"
+
+#: .\boards\templates\about.html:90
+msgid ""
+"The National Museum has branches all over Dublin. Visit its Kildare Street "
+"buildings \n"
+"\t\t\t\t\tand prepare to get stunned by the sheer number and amazing beauty "
+"of its prehistoric gold ornaments which \n"
+"\t\t\t\t\tinclude the Ardagh Chalice and the famous Tara Brooch with their "
+"Celtic designs."
+msgstr ""
+"国家博物馆在都柏林有分支机构。参观其基尔代尔的街道建筑, 并准备被它的史前黄金"
+"饰品的纯粹数量和惊人的美丽, 其中包括 Ardagh 圣杯和著名的塔拉胸针与他们的凯尔"
+"特人设计惊呆了。"
+
+#: .\boards\templates\index.html:15
+msgid "language"
+msgstr "选择你的族语。"
+
+#: .\boards\templates\index.html:43
+msgid "TRAVEL IRELAND"
+msgstr "欢迎来到爱尔兰旅游"
+
+#: .\boards\views.py:31
+msgid "Boards"
+msgstr "木板"
+
+#: .\boardsproj\settings.py:117
+msgid "English"
+msgstr "英语 - 美国"
+
+#: .\boardsproj\settings.py:118
+msgid "German"
+msgstr "德语"
